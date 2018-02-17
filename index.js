@@ -88,10 +88,12 @@ var hangman = {
           var found = that.currentWord.checkIfLetterFound(letterReturned);
           //if none were found tell user they were wrong
           if(found === 0){
+            console.log('\n                      ');
             console.log('Nope! You guessed wrong.');
             that.guessesRemaining--;
             that.display++;
             console.log('Guesses remaining: ' + that.guessesRemaining);
+
 
             console.log('\n*******************');
             console.log(that.currentWord.wordRender());
